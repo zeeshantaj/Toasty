@@ -12,8 +12,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Toaster.showToast(this,"hello world");
-        ConfigMethods.showToast2(this,"config");
-        OwnCommonUtils.showToast1(this,"common ");
 
     }
 }
