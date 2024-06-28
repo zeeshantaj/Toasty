@@ -2,7 +2,6 @@ plugins {
     id 'com.android.library'
     id 'maven-publish'
 }
-
 android {
     namespace 'com.example.toasty'
     compileSdk 34
@@ -31,9 +30,6 @@ android {
     }
 
 }
-
-
-
 publishing {
     publications {
         release(MavenPublication) {
