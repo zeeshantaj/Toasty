@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.example.toasty.R;
+import com.example.toastymodule1.Toaster;
 
 public class MainActivity extends AppCompatActivity {
 
