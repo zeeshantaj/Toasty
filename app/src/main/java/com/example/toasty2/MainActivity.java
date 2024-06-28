@@ -18,5 +18,6 @@ public class MainActivity extends AppCompatActivity {
         Toaster.showToast(this,"hello world");
         CommonUtilsMethods.commonToast(this,"haha");
 
+
     }
 }

@@ -1,6 +1,6 @@
 plugins {
     id 'com.android.library'
-    //id 'maven-publish'
+    id 'maven-publish'
 }
 android {
     namespace 'com.example.toasty'
@@ -30,24 +30,24 @@ android {
     }
 
 }
-//publishing {
-//    publications {
-//        release(MavenPublication) {
-//            //from components.release
-//            from components.findByName('release')
-//            groupId = 'com.github.zeeshantaj'
-//            artifactId = 'Toasty'
-//            version = '1.0.0'
-//        }
-//
-//    }
-//    repositories {
-//        maven {
-//            name = "Toasty"
-//            url = uri("https://maven.pkg.github.com/zeeshantaj/Toasty")
-//        }
-//    }
-//}
+publishing {
+    publications {
+        release(MavenPublication) {
+            //from components.release
+            from components.findByName('release')
+            groupId = 'com.github.zeeshantaj'
+            artifactId = 'Toasty'
+            version = '1.0.0'
+        }
+
+    }
+    repositories {
+        maven {
+            name = "Toasty"
+            url = uri("https://maven.pkg.github.com/zeeshantaj/Toasty")
+        }
+    }
+}
 
 
 dependencies {
