@@ -29,7 +29,9 @@ android {
     packagingOptions {
         exclude 'META-INF/BuildConfig.class'
     }
+
 }
+
 
 
 publishing {
@@ -39,7 +41,7 @@ publishing {
             from components.findByName('release')
             groupId = 'com.github.zeeshantaj'
             artifactId = 'Toasty'
-            version = '1.2.7'
+            version = '1.2.8'
         }
 
     }
