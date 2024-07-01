@@ -22,12 +22,15 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        //        sourceCompatibility JavaVersion.VERSION_1_8
+//        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
     }
     packagingOptions {
         exclude 'META-INF/BuildConfig.class'
     }
+
 
 }
 publishing {
@@ -37,14 +40,13 @@ publishing {
             from components.findByName('release')
             groupId = 'com.github.zeeshantaj'
             artifactId = 'Toasty'
-            version = '12.0.0'
+            version = '13.0.0'
         }
 
     }
     repositories {
         maven {
             name = "Toasty"
-            //url = uri("https://jitpack.io/#zeeshantaj/Toasty")
             url = uri("https://maven.pkg.github.com/zeeshantaj/Toasty")
         }
     }
