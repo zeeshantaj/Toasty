@@ -5,8 +5,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.example.toasty.R;
+import com.example.toastymodule1.AlarmUtils;
 import com.example.toastymodule1.CommonUtilsMethods;
+import com.example.toastymodule1.DBModelCategory;
 import com.example.toastymodule1.Toaster;
+import com.example.toastymodule1.UiHelper;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,7 +20,9 @@ public class MainActivity extends AppCompatActivity {
 
         Toaster.showToast(this,"hello world");
         CommonUtilsMethods.commonToast(this,"haha");
-
+        //AlarmUtils.showToast();
+        //DBModelCategory.showToast();
+        //UiHelper
 
     }
 }
