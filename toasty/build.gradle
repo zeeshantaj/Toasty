@@ -30,26 +30,25 @@ android {
     }
 
 }
-//publishing {
-//    publications {
-//        release(MavenPublication) {
-//            //from components.release
-//            from components.findByName('release')
-//            groupId = 'com.github.zeeshantaj'
-//            //groupId = 'com.example'
-//            artifactId = 'Toasty'
-//            version = '11.1.6'
-//        }
-//
-//    }
-//    repositories {
-//        maven {
-//            name = "Toasty"
-//            //url = uri("https://jitpack.io/#zeeshantaj/Toasty")
-//            url = uri("https://maven.pkg.github.com/zeeshantaj/Toasty")
-//        }
-//    }
-//}
+publishing {
+    publications {
+        release(MavenPublication) {
+            //from components.release
+            from components.findByName('release')
+            groupId = 'com.github.zeeshantaj'
+            artifactId = 'Toasty'
+            version = '12.0.0'
+        }
+
+    }
+    repositories {
+        maven {
+            name = "Toasty"
+            //url = uri("https://jitpack.io/#zeeshantaj/Toasty")
+            url = uri("https://maven.pkg.github.com/zeeshantaj/Toasty")
+        }
+    }
+}
 
 
 dependencies {
